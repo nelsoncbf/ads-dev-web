@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<style>
+    head,
+    body {
+        font-family: Century Gothic, CenturyGothic, AppleGothic, sans-serif;
+    }
+</style>
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
+<head>
+    <meta charset="UTF-8">
+    <div class="container">
+        <table>
+            <tr>
+                <td style="border: 1px solid transparent">
+                    <img src="oldmutual.png">
+                </td>
+                <td style="border: 1px solid transparent">
+                    <style>
+                        h3 {
+                            color: #0B614B;
+                        }
+                    </style>
+                    <h3>
+                        <b>MOTOR ACCIDENT CLAIM FORM
+                            (Delete sections not applicable)<br>
+                            MOTORONGELUK-EISVORM
+                            (Skrap afdelings nie van toepassing nie)</b>
+
+                    </h3>
+                </td>
+            </tr>
+        </table>
+    </div>
+    <br><br>
+</head>
+<style>
+    input[type=text] {
+        width: 400px;
+    }
+    .textao { width: 800px;}
+
+</style>
+
+<body class="container">
+    <form id="form">
+        <div class="container col-md-12">
+            <div class="col-md-4">
+                <b>Old Mutual InsureLimited. Reg No:<br>
+                    1970/006619/06VAT No: 4460101019<br>
+                    Authorised Financial Services Provider(FSP 12)<br>
+                    Gemagtigde Finasiele Diensverskaffer (FDV 12</b><br>
+            </div>
+            <div class="col-md-4">
+                <label> POLICY NO.: </label><input type="number" placeholder="POLISNR"><br>
+            </div>
+            <div class="col-md-4">
+                <label> CLAIM NO: </label><input type="number" placeholder="EISNR."><br>
+            </div>
+        </div>
+        <p>
+            <h1 style="text-align: center"><b>BROKER/AGENT ~ MAKELAAR/AGENT</b></h2>
+        </p>
+        <!-- INSURED -->
+        <div class="row">
+            <h2 style="text-align: left">
+                INSURED/VERSEKERDE
+            </h2>
+            <div>
+                <label>NAME AND OCCUPATION </label><input type=text min="12" max="30" placeholder="NAAM EN BEROEP">
+            </div>
+            <div>
+                <label>IDENTITY NUMBER </label><input type="number" min="10" max="13" placeholder="IDENTITEITSNOMMER">
+            </div>
+            <div>
+                <label>VAT REGISTRATION NO. </label><input type="number" min="4" max="20" placeholder="BTW REGISTRASIENR.">
+            </div>
+            <div>
+                <label>ADDRESS AND DAY </label><input type="text" min="8" max="30" placeholder="ADRES EN DAG">
+            </div>
+            <div>
+                <label>TELEPHONE NUMBER </label><input tupe="number" min="8" max="14" placeholder="TELEFOONNOMMER">
+            </div>
+        </div>
+        <!-- VEHICLE -->
+        <div class="row">
+            <h2 style="text-align: left">
+                VEHICLE/VOERTUIG
+            </h2>
+            <div>
+                <label>Make </label><input type=text min="4" max="20" placeholder="Fabrikaat">
+            </div>
+            <div>
+                <label>Tare </label><input type="TEXT" min="4" max="20" placeholder="Tarra">
+            </div>
+            <div>
+                <label>Gross Vehicle Mass </label><input type="text" min="4" max="20" placeholder="Bruto Voertuig Massa">
+            </div>
+            <div>
+                <label>Kilometres Completed </label><input tupe="number" min="1" max="12" placeholder="Kilometers Afgelé">
+            </div>
+            <div>
+                <label>If vehicle subject to Hire Purchase, Credit or Leasing Agreement, state name and address
+                    of Finance Company <br></label>
+            </div>
+            <div>
+                <input class="textao" type="text-area" min="4" max="40" placeholder="Indien voertuig onderHuurkoop, Krediet-ofBruikhuur-ooreenkoms is,meld naam en adres van Finansieringsmaatskappy">
+            </div>
+            <div>
+                <label>Registration </label><input type="text" min="4" max="20" placeholder="Registrasie">
+            </div>
+            <div>
+                <label>Value </label><input type="number" min="4" max="20" placeholder="Waarde">
+            </div>
+            <div>
+                <label>Model and Year </label><input type="text" min="4" max="20"
+                    placeholder="Model"><input type="number" min="1800" max="2019" placeholder="Jaar">
+            </div>
+            <div>
+                <label>Dateofpurchase/Datum vanaankoop </label><input type="date">
+            </div>
+            <div>
+                <label>In whose name is the vehicle registered?
+                </label><input type="text" min="4" max="20" placeholder="In wie se naam is die voertuig geregistreer?">
+            </div>
+        </div>
+        <!-- DAMAGE -->
+        <div class="row">
+            <h2 style="text-align: left">
+                DAMAGE/SKADE
+            </h2>
+            <div>
+                <label>Damage to own vehiclet </label><input type=text min="4" max="20" placeholder="Skade aan u eie voertuig">
+            </div>
+            
+        </div>
+    </form>
+</body>
+
+</html>
