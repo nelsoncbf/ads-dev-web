@@ -43,8 +43,10 @@
     input[type=text] {
         width: 400px;
     }
-    .textao { width: 800px;}
 
+    .textao {
+        width: 800px;
+    }
 </style>
 
 <body class="container">
@@ -65,79 +67,233 @@
         </div>
         <p>
             <h1 style="text-align: center"><b>BROKER/AGENT ~ MAKELAAR/AGENT</b></h2>
-        </p>
+        </p><br><br>
         <!-- INSURED -->
         <div class="row">
-            <h2 style="text-align: left">
-                INSURED/VERSEKERDE
-            </h2>
-            <div>
-                <label>NAME AND OCCUPATION </label><input type=text min="12" max="30" placeholder="NAAM EN BEROEP">
-            </div>
-            <div>
-                <label>IDENTITY NUMBER </label><input type="number" min="10" max="13" placeholder="IDENTITEITSNOMMER">
-            </div>
-            <div>
-                <label>VAT REGISTRATION NO. </label><input type="number" min="4" max="20" placeholder="BTW REGISTRASIENR.">
-            </div>
-            <div>
-                <label>ADDRESS AND DAY </label><input type="text" min="8" max="30" placeholder="ADRES EN DAG">
-            </div>
-            <div>
-                <label>TELEPHONE NUMBER </label><input tupe="number" min="8" max="14" placeholder="TELEFOONNOMMER">
-            </div>
-        </div>
+            <legend style="text-align: left"> INSURED/VERSEKERDE </legend>
+            <label>NAME AND OCCUPATION </label><input type=text placeholder="NAAM EN BEROEP"><br>
+            <label>IDENTITY NUMBER </label><input type="number" placeholder="IDENTITEITSNOMMER"><br>
+            <label>VAT REGISTRATION NO. </label><input type="number" placeholder="BTW REGISTRASIENR."><br>
+            <label>ADDRESS AND DAY </label><input type="text" placeholder="ADRES EN DAG"><br>
+            <label>TELEPHONE NUMBER </label><input tupe="number" placeholder="TELEFOONNOMMER"><br>
+        </div><br><br>
         <!-- VEHICLE -->
         <div class="row">
-            <h2 style="text-align: left">
-                VEHICLE/VOERTUIG
-            </h2>
-            <div>
-                <label>Make </label><input type=text min="4" max="20" placeholder="Fabrikaat">
-            </div>
-            <div>
-                <label>Tare </label><input type="TEXT" min="4" max="20" placeholder="Tarra">
-            </div>
-            <div>
-                <label>Gross Vehicle Mass </label><input type="text" min="4" max="20" placeholder="Bruto Voertuig Massa">
-            </div>
-            <div>
-                <label>Kilometres Completed </label><input tupe="number" min="1" max="12" placeholder="Kilometers Afgelé">
-            </div>
-            <div>
-                <label>If vehicle subject to Hire Purchase, Credit or Leasing Agreement, state name and address
-                    of Finance Company <br></label>
-            </div>
-            <div>
-                <input class="textao" type="text-area" min="4" max="40" placeholder="Indien voertuig onderHuurkoop, Krediet-ofBruikhuur-ooreenkoms is,meld naam en adres van Finansieringsmaatskappy">
-            </div>
-            <div>
-                <label>Registration </label><input type="text" min="4" max="20" placeholder="Registrasie">
-            </div>
-            <div>
-                <label>Value </label><input type="number" min="4" max="20" placeholder="Waarde">
-            </div>
-            <div>
-                <label>Model and Year </label><input type="text" min="4" max="20"
-                    placeholder="Model"><input type="number" min="1800" max="2019" placeholder="Jaar">
-            </div>
-            <div>
-                <label>Dateofpurchase/Datum vanaankoop </label><input type="date">
-            </div>
-            <div>
-                <label>In whose name is the vehicle registered?
-                </label><input type="text" min="4" max="20" placeholder="In wie se naam is die voertuig geregistreer?">
-            </div>
-        </div>
+            <legend style="text-align: left"> VEHICLE/VOERTUIG </legend>
+            <label>Make </label><input type=text placeholder="Fabrikaat"><br>
+            <label>Tare </label><input type="TEXT" placeholder="Tarra"><br>
+            <label>Gross Vehicle Mass </label><input type="text" placeholder="Bruto Voertuig Massa"><br>
+            <label>Kilometres Completed </label><input tupe="number" placeholder="Kilometers Afgelé"><br>
+            <label>If vehicle subject to Hire Purchase, Credit or Leasing Agreement, state name and address
+                of Finance Company <br></label>
+            <input class="textao" type="text-area"
+                placeholder="Indien voertuig onderHuurkoop, Krediet-ofBruikhuur-ooreenkoms is,meld naam en adres van Finansieringsmaatskappy"><br>
+            <label>Registration </label><input type="text" placeholder="Registrasie"><br>
+            <label>Value </label><input type="number" placeholder="Waarde"><br>
+            <label>Model and Year </label><input type="text" placeholder="Model">
+            <input type="number" min="1800" max="2019" placeholder="Jaar"><br>
+            <label>Dateofpurchase/Datum vanaankoop </label><input type="date"><br>
+            <label>In whose name is the vehicle registered?
+            </label><input type="text" placeholder="In wie se naam is die voertuig geregistreer?"><br>
+        </div><br><br>
         <!-- DAMAGE -->
         <div class="row">
-            <h2 style="text-align: left">
+            <legend style="text-align: left">
                 DAMAGE/SKADE
-            </h2>
-            <div>
-                <label>Damage to own vehiclet </label><input type=text min="4" max="20" placeholder="Skade aan u eie voertuig">
-            </div>
-            
+            </legend>
+            <label>Damage to own vehiclet </label><input type=text placeholder="Skade aan u eie voertuig"><br>
+            <label>Estimate for repairs or attach quotation</label><input type="number"
+                placeholder="Beraamde herstelkoste of heg kwotasie aan"><br>
+            <label>Repairer’s name</label><input type="string" placeholder="Hersteller se naam"><br>
+            <label>Repairer's address</label><input type="string" placeholder="Hersteller se adres"><br>
+            <label>Repairer's telephone number</label><input type="number"
+                placeholder="Hersteller se telefoonno mmer"><br>
+            <label>Where can your damaged vehicle be inspected?</label><input type="string"
+                placeholder="Waar kan u beskadigde voertuig ondersoek word?"><br>
+        </div><BR><BR>
+        <!-- /DAMAGE -->
+        <!-- DRIVER -->
+        <div class="row">
+            <legend>
+                DRIVER/BESTUURDER
+            </legend>
+            <label>Full Name</label><input type="string" placeholder="Volle Naam"><br>
+            <label>Adress</label><input type="string" placeholder="Adres"><br>
+            <label>Occupation</label><input type="string" placeholder="Beroep"><br>
+            <label>Identity Number</label><input type="number" placeholder="Identite itsnommer"><br>
+            <br>
+            <h5><B>- DRIVING LICENCE/RYBEWYS</B></h5>
+            <label>- Number</label><input type="number" placeholder="Nommer"><br>
+            <label>- Date</label><input type="date" placeholder="Datum"><br>
+            <label>- Place</label><input type="string" placeholder="Plek"><br>
+            <label>- Code</label><input type="string" placeholder="Kode"><br>
+            <label>- Full/Vol</label><input type="string" placeholder="Learner/Leerlin">
+            <br><br>
+            <label>State fully the purpose for which the vehicle wasbeing used </label><input type="string"
+                placeholder="Meld volledig die doel waarvoor die voertuiggebruik is"><br>
+            <label>Was he/she driving with your permission?</label><input type="string"
+                placeholder="Het hy/sy met u toestemming bestuur?"><br>
+            <label>Was he/she in your employ?</label><input type="string" placeholder="Was hy/sy in u diens?"><br>
+            <label>Is he/she the owner of another Vehicle? I</label><input type="string"
+                placeholder="Is hy/sy die eienaar van n’ander voertuig?"><br>
+            <label>If yes, give name of Insurer and policy number</label><input type="number"
+                placeholder="Indien ja,meld naam van versekeraaren polisnommer"><br>
+            <label>Details of any convictions for motoring offences</label><input type="string"
+                placeholder="Besonderhede van enigeveroordelings weensmotorry-oortreding"><br>
+            <label>Has licence ever beenendorsed?</label><input type="string"
+                placeholder="Is rybewys ooitgeëndosseer?"><br>
+            <label>Has he/she any physical defects?</label><input type="string"
+                placeholder="Ly hy/sy aan enige liggaamlike gebreke?"><br>
+            <label>Details of previous accidents</label><input type="string"
+                placeholder="Besonderhede van vorigeondelukke"><br>
+        </div><br>
+        <!-- /DRIVER -->
+        <!-- PASSENGERS -->
+        <div class="row">
+            <legend>
+                PASSENGERS(Insured Vehicle) / PASSASIERS (Versekerde Voertuig)
+            </legend>
+            <h5><B>
+                    - PASSENGERS IN INSURED VEHICLE/PASSASIERS IN VERSEKERDE VOERTUIG
+                </B></h5>
+            <label>- Name</label><input type="string" placeholder="Naam"><br>
+            <label>- Address</label><input type="string" placeholder="Adres"><br>
+            <label>- Injury</label><input type="string" placeholder="Vesering"><br><br>
+
+            <label>For what purpose were they carried?</label><input type="string"
+                placeholder="Met watter doel is hullevervoer?"><br>
+            <label>Are they employees?</label><input type="string" placeholder="Is hulle werknemers?"><br>
+        </div><BR><BR>
+        <!-- /PASSENGERS-->
+        <!-- OTHER PARTY-->
+        <div class="row">
+            <legend>
+                OTHER PARTY/ANDER PARTY
+            </legend>
+            <br>
+            <h5>OTHER VEHICLES/ANDER VOERTUIE</h5>
+            <label>Registration Number </label><input type="number" placeholder="Registrasienommer"><br>
+            <label>Make</label><input type="string" placeholder="Fabrikaat"><br>
+            <label>Name and Address of Owner and Driver </label><input type="string" placeholder="Naam"><input
+                type="string" placeholder="adres van Eienaar en"><br>
+            <label>Details of damage </label><input type="string" placeholder="Besonderhede van skade"><br>
+            <label>Contact details: Home, Work or Cell No.<br>Kontak besonderhede: Huis, Werk of Sellulê</label> 1)
+            <input type="string" placeholder="1"> 2) <input type="string" placeholder="2"> 3) <input type="string"
+                placeholder="3"><br>
+            <label>Insurance details: Company, Policy and/or Claim No. <br>> besonderhede: Maatskappy, Polis en/of Eis
+                No.</label> 1) <input type="string" placeholder="1"> 2) <input type="string" placeholder="2"> 3) <input
+                type="string" placeholder="3"><br>
+            <label>Details of damage<br> Besonderhede van skade</label> 1) <input type="string" placeholder="1"> 2)
+            <input type="string" placeholder="2"> 3) <input type="string" placeholder="3"><br>
+            <h5>PROPERTY OTHER THAN VEHICLES/EIENDOM UITGESONDERDVOERTUIE</h5>
+            <label>Name and Address of Owner<BR>Naam en adres van Eienaar</label> 1) <input type="string"
+                placeholder="1"> 2) <input type="string" placeholder="2"> 3) <input type="string" placeholder="3"><br>
+            <label>Details of damage<BR>Besonderhede van skade</label> 1) <input type="string" placeholder="1"> 2)
+            <input type="string" placeholder="2"> 3) <input type="string" placeholder="3"><br>
+            <br>
+            <h5>PERSONAL INJURIES (OTHER THAN IN INSURED’S VEHICLE) / PERSOONLIKE BESERINGS (UITGESONDERD DIEIN
+                VERSEKERDE SEVOERTUIG)</h5>
+            <label>Name of Injured<br>Naam van Beseerde</label> 1) <input type="string" placeholder="1"> 2) <input
+                type="string" placeholder="2"> 3) <input type="string" placeholder="3"><br>
+            <label>Relationship to accident e.g.Driver, Passenger etc.<br>Verband met die ongeluk bv. Bestuurder,
+                Passasier ens</label> 1) <input type="string" placeholder="1"> 2) <input type="string" placeholder="2">
+            3) <input type="string" placeholder="3"><br>
+            <label>Details of Injuries<br>Besonderhede van Beserings</label> 1) <input type="string" placeholder="1"> 2)
+            <input type="string" placeholder="2"> 3) <input type="string" placeholder="3"><br>
+            <label>Name of Hospital, if applicable<br>Naam van Hospitaal indien vantoepassing</label> 1) <input
+                type="string" placeholder="1"> 2) <input type="string" placeholder="2"> 3) <input type="string"
+                placeholder="3"><br>
+        </div>
+        <div class="row">
+            <legend>
+                WITNESSES / GETUIES
+            </legend>
+            <label>Name</label><input type="string" placeholder="Naam""><br>
+            <label>Adres</label><input type=" string" placeholder="Adres"><br>
+            <label>Telephone Number</label><input type="number" placeholder="Telefoonno mmer"><br>
+            <br>
+            <label>Name</label><input type="string" placeholder="Naam""><br>
+            <label>Adres</label><input type=" string" placeholder="Adres"><br>
+            <label>Telephone Number</label><input type="number" placeholder="Telefoonno mmer"><br>
+        </div>
+        <!-- ACCIDENT-->
+        <div class="row">
+            <legend>ACCIDENT/ONGEFLUK</legend>
+            <label>Date / Datum</label><input type="date" placeholder="Datum"><br>
+            <label>Time / Tyd </label><input type="time" placeholder="Tyd"><br>
+            <label>Place</label><input type="place" placeholder="Plek"><br>
+            <label>Speed</label><input type="number" placeholder="Spoed"><br>
+            <label>Before accident (kph)</label><input type="number" placeholder="Voor ongeluk"><br>
+            <label>Moment of impact (kph)</label><input type="number" placeholder="Oomblik van botsing"><br>
+            <label>a) Weatherconditions</label><input type="string" placeholder="Weerso mstandig hede"><br>
+            <label>b) Visibility</label><input type="string" placeholder="Sigbaarheid"><br>
+            <label>a) Road surface</label><input type="string" placeholder="Padopper lak"><br>
+            <label>b) Width of road</label><input type="string" placeholder="Breedte van pad"><br>
+            <label>a) Which vehicle lights were on?</label><input type="string"
+                placeholder="Watter vo ertuigligte was aan?"><br>
+            <label>b) Street lighting</label><input type="string" placeholder="Straatbeligting"><br>
+            <label>Was aby warning given by you, e.g. hooting, indicator etc.?</label><input type="string"
+                placeholder="Is enige waarskuwingdeur u gegee, bv,toeter, flikkerlig ens?"><br>
+            <br>
+            <h5>POLICE DETAILS /POLISIEBESONDERHEDE</h5>
+            <label>Name of Police/Traffic officer who recorded details of Accident<BR>Naam van Polisie-/Verkeersbeampte
+                wat besonderhede van ongeluk geneem het</label><input type="STRING" placeholder=""><br>
+            <label>Police Station and Reference No.<BR>Polisiestasie en verwysingsnr.</label><input type="STRING"
+                placeholder=""><br>
+            <label>Was driver tested for Alcohol or drugs?</label><input type="string"
+                placeholder="Is bestuurder getoetsvir Alkohol of dwelmmiddels?"><br>
+            <label>DESCRIPTION OF ACCIDENT / BESKRYWING VANONGELUK</label><textarea row="10" cols="50"></textarea><br>
+            <br><br>
+            <h5><b>SKETCH OF ACCIDENT</b>(if necessary use separate page)/<b>SKETS VAN ONGELUK</b>(indien nodig heg
+                aparte sketsplan aan)</h5>
+            <label>Please show clearly the point of impact and indicate the direction of travel by arrows. Give details
+                of any road safety signs or warning signs in vicinity of scene of accident
+                <br>
+                Dui asseblief die plek van botsing duidelik aan en gebruik pyltjies om die rigting waarin gereis is, aan
+                te toon. Gee besonderhede van enige padveiligheidstekens of waarskuwingstekens in die omgewing van die
+                ongelukstonee
+                <textarea row="10" cols="10"></textarea>
+        </div><br><br>
+        <!-- /ACCIDENT -->
+        <!--Licence Inspected-->
+        <div class="row">
+            <legend>
+                LICENCE INSPECTED/RYBEWYS NAGEGA AN
+            </legend>
+            I have inspected the driver’s licence and it is free of endorsements/endorsed as shown. Please attach copies of driver’s licence and page 1 of driver’s identity document.
+            <br>
+            Ek het die bestuurder se rybewys nagegaan en dit is nie geëndosseer nie/is geëndosseer soos angedui.Heg asseblief afskrifte van die bestuurderslisensie en bladsy 1 van die identiteits dokument hierbyaan.
+            <br><br>            
+            <label>Signature / Handtekening</label><input type="string"><br>
+            <label>Capacity / Hoedanigheid</label><input type="string"><br>
+            <label>Date / Datum</label><input type="date"><br>
+        </div>
+        <!--/Licence Inspected-->
+        <!-- DECLARATION-->
+        <div class="row">
+            <legend>
+                    DECLARATION/VERKLARING
+            </legend>
+            We hereby declare the following particulars to be true inevery respect.
+            <br>
+            Ons verklaar hiermee dat die voorafgaande besonderhede in elke o psig waar is.
+            <br><br>
+            <label>Signatureof Driver / Bestuurder seHandtekening</label><input type="string"><br>
+            <label>Capacity / Hoedanigheid</label><input type="string"><br>
+            <label> Date / Datum</label><input type="date"><br><br>
+            <label>SignatureofInsured / Versekerde seHandtekeni</label><input type="string"><br>
+            <label>Capacity / Hoedanigheid</label><input type="string"><br>
+            <label> Date / Datum</label><input type="date"><br>
+            <b>N.B.1</b>
+            <p>
+                IT IS IMPORTANT THAT YOU NOTIFY THE INSURERS IMMEDIATELY YOU BECOME AWARE OF ANY IMPENDING PROSECUTION, INQUEST OR DEMAND.
+                <br>.DIT IS BELANGRIK DAT U DIE VERSEKERAARS ONMIDDELLIK IN KENNIS STEL SODRA U BEWUS WORD VAN ENIGE VERVOLGNG, NADOODSE ONDERSOEKOF EIS
+            </p>
+            <b>N.B.2</b>
+            <P>
+               ANY PERSNAL INJURIES NOTED OVERLEAF MUST BE REPORTED SEPARATELY TO THE MULTILATERAL MOTOR VEHICLE ACCIDENTS FUND WITHOUT DELAY.
+                <BR>ENIGE PERSOONLIKE BESERINGS WAT OP DIE KEERSY VERMELD WORD MOET ONMIDDELLIK EN AFSONDERLIK AAN DIE MULTILATERALE MOTORVOERTUIG-ONGELUKKEFONDS GERAPORTEER WORD
+            </P>
         </div>
     </form>
 </body>
