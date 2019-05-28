@@ -1,7 +1,7 @@
 <%-- 
-    Document   : valida
-    Created on : 02/05/2019, 20:21:22
-    Author     : 2014201608
+    Disciplína: Desenvolvimento de Aplicações WEB - 852
+    Aluno : Nelson de Castro Barros Fonseca
+    Matrícula: 2014201608
 --%>
 
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
@@ -90,15 +90,14 @@
         String[] a = ip.split("\\.");
         int b = Integer.parseInt(a[0]);
         String voltaClasse;
-            if (b >= 0 && b <=127 ){ classe = ("A");
-            }else if (b >= 128 && b <=191){ voltaClasse = ("B");
-            }else if (b >= 192 && b <=223){ voltaClasse = ("C");
-            }else if (b >= 224 && b <=239){ voltaClasse = ("D");
-            }else if (b >= 240 && b <=247){ voltaClasse = ("E");
-            }else{ voltaClasse = ("IP Inválido");}
+                 if ((b >=   0) && (b <=127)) voltaClasse = ("A");
+            else if ((b >= 128) && (b <=191)) voltaClasse = ("B");
+            else if ((b >= 192) && (b <=223)) voltaClasse = ("C");
+            else if ((b >= 224) && (b <=239)) voltaClasse = ("D");
+            else if ((b >= 240) && (b <=247)) voltaClasse = ("E");
+            else voltaClasse = ("IP Inválido");
         return voltaClasse;
     }    
-    
 %>
 <!DOCTYPE html>
 <html>
