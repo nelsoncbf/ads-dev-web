@@ -89,7 +89,13 @@
     String pegaClasse(String ip){
         String[] a = ip.split("\\.");
         int b = Integer.parseInt(a[0]);
-        String voltaClasse = ("IP Inválido");
+        String voltaClasse;
+            if (b >= 0 && b <=127 ){ classe = ("A");
+            }else if (b >= 128 && b <=191){ voltaClasse = ("B");
+            }else if (b >= 192 && b <=223){ voltaClasse = ("C");
+            }else if (b >= 224 && b <=239){ voltaClasse = ("D");
+            }else if (b >= 240 && b <=247){ voltaClasse = ("E");
+            }else{ voltaClasse = ("IP Inválido");}
         return voltaClasse;
     }    
     
